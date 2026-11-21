@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Records System</title>
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body>
+  <main>
+    <h1>Student Records System</h1>
+    <p>Class demonstration. Fictional records only</p>
+    <section id="auth-section">
+      <h2>Operator sign in</h2>
+      <input id="email" type="email" placeholder="Email" />
+      <input id="password" type="password" placeholder="Password" />
+      <button id="signin-btn">Sign in</button>
+      <p id="auth-msg"></p>
+    </section>
+    <section id="app-section" style="display:none">
+      <p id="signed-in-as"></p>
+      <button id="signout-btn">Sign out</button>
+      <h2>Add or edit a student</h2>
+      <input id="student_no" placeholder="Student number" />
+      <input id="first_name" placeholder="First name" />
+      <input id="last_name" placeholder="Last name" />
+      <input id="year_level" type="number" placeholder="Year level" />
+      <input id="student_email" type="email" placeholder="Student email" />
+      <select id="course-select"></select>
+      <button id="save-btn">Save student</button>
+      <h2>Student list</h2>
+      <input id="search" placeholder="Search name or student number" />
+      <button id="search-btn">Search</button>
+      <div id="student-list"></div>
+      <h2>Course report</h2>
+      <select id="report-course"></select>
+      <button id="count-btn">Count students</button>
+      <p id="count-result"></p>
+    </section>
+  </main>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>
